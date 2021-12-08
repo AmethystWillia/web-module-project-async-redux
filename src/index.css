@@ -1,4 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styles */
+* {
+	font-size: 62.5%;
+	color: #282c34;
+}
+
+h1, h2, button {
+	font-family: 'Acme', sans-serif;
+}
+p {
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 3.4rem;
+}
+p, button {
+	font-size: 1.8rem;
+}
 
 body {
-	background: #f5f5f5;
+	background-color: #fffde9;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e99d83' fill-opacity='0.29'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* App Styles */
+.App {
+	margin: 2%;
+	text-align: center;
+}
+
+/* Cat Styles */
+.div {
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+
+	width: 52%;
+
+	border: 5px solid #282c34;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+	padding-bottom: 2%;
+}
+
+button {
+	margin: 1%;
+	padding: 10px 20px;
+
+	border: 3px solid #282c34;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+	border: 3px solid #282c34;
+	border-radius: 10px;
+}
+
+.error {
+	color: crimson;
 }

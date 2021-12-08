@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getCat } from '../actions/catAction';
 
+// CSS
+import '../index.css';
+
 // ---------- Component ---------- //
 const Cat = (props) => {
     const { catPic, isFetching, error } = props;
@@ -18,16 +21,16 @@ const Cat = (props) => {
 
     if (error) {
         return (
-            <div>
-                <h2>Oops! We got an error!</h2>
-                <p>{error}</p>
+            <div className='error div'>
+                <h2 className='error'>Oops! We got an error!</h2>
+                <p className='error'>{error}</p>
             </div>
         );
     };
 
     if (isFetching) {
         return (
-            <div>
+            <div className='div'>
                 <h2>Grabbing a cat...</h2>
             </div>
         );
@@ -35,7 +38,7 @@ const Cat = (props) => {
 
     // Renders content
     return (
-        <div>
+        <div className='div'>
             <h2>Generate a Cat!</h2>
             <img width='500' src={catPic}/>
             <button onClick={handleClick}>Get Cat!</button>
