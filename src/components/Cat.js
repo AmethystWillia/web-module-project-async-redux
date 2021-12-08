@@ -1,5 +1,6 @@
 // ---------- Imports ---------- //
 import React from 'react';
+import { connect } from 'react-redux';
 
 // ---------- Component ---------- //
 const Cat = (props) => {

@@ -9,11 +9,11 @@ import thunk from 'redux-thunk';
 // Import reducers
 import { catReducer } from './reducers/catReducer';
 
-// Create store
-const store = createStore(catReducer, applyMiddleware(thunk, logger));
-
 import App from './App';
 import './index.css';
+
+// Create store
+const store = createStore(catReducer, applyMiddleware(thunk, logger));
 
 ReactDOM.render(
   <Provider store={store}>
