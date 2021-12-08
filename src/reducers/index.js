@@ -1,7 +1,7 @@
 import { CAT_START, CAT_SUCCESS, CAT_FAILURE } from "../actions/catAction";
 
 const initialState = {
-  catPic: 'https://cdn2.thecatapi.com/images/alh.jpg',
+  catPic: 'https://thatcopy.github.io/catAPI/imgs/jpg/2ac57b8.jpg',
   isFetching: false,
   error: ''
 };
@@ -11,21 +11,21 @@ export const reducer = (state = initialState, action) => {
     case(CAT_START):
       return ({
         ...state,
-        person: {},
+        catPic: '',
         isFetching: true,
         error: '',
       });
     case(CAT_SUCCESS):
       return ({
         ...state,
-        person: action.payload,
+        catPic: action.payload,
         isFetching: false,
         error: '',
       });
     case(CAT_FAILURE):
       return ({
         ...state,
-        person: {},
+        catPic: '',
         isFetching: false,
         error: action.payload,
       });
