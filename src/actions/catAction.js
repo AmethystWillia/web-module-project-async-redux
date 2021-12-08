@@ -5,8 +5,8 @@ export const CAT_FAILURE = 'CAT_FAILURE';
 export const catStart = () => {
     return ({type: CAT_START});
 };
-export const catSuccess = (cat) => {
-    return ({type: CAT_SUCCESS, payload: cat});
+export const catSuccess = (person) => {
+    return ({type: CAT_SUCCESS, payload: person});
 };
 export const catFailure = (error) => {
     return ({type: CAT_FAILURE, payload: error});

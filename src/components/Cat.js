@@ -1,9 +1,11 @@
 // ---------- Imports ---------- //
 import React from 'react';
 import { connect } from 'react-redux';
+import { catStart } from '../actions/catAction';
 
 // ---------- Component ---------- //
 const Cat = (props) => {
+    const { catPic, isFecthing, error } = props;
     // Renders content
     return (
         <div>
@@ -13,4 +15,13 @@ const Cat = (props) => {
     );
 };
 
-export default Cat;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        catPic: state.catPic,
+        isFecthing: state.isFecthing,
+        error: state.error,
+    };
+};
+
+export default connect(mapStateToProps, { catStart }) (Cat);
