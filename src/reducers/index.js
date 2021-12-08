@@ -1,7 +1,7 @@
 import { CAT_START, CAT_SUCCESS, CAT_FAILURE } from "../actions/catAction";
 
 const initialState = {
-  person: 'https://cdn2.thecatapi.com/images/alh.jpg',
+  catPic: 'https://cdn2.thecatapi.com/images/alh.jpg',
   isFetching: false,
   error: ''
 };

@@ -6,6 +6,7 @@ import { catStart } from '../actions/catAction';
 // ---------- Component ---------- //
 const Cat = (props) => {
     const { catPic, isFecthing, error } = props;
+    console.log(catPic);
     // Renders content
     return (
         <div>
@@ -16,7 +17,6 @@ const Cat = (props) => {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         catPic: state.catPic,
         isFecthing: state.isFecthing,
